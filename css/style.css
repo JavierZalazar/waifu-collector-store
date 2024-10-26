@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:wght@400;700&display=swap');
+
+
+/* GENERAL */
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+
+
+/* HEADER */
+
+header, footer {
+    background: rgb(246,167,193);
+    background: linear-gradient(183deg, rgba(246,167,193,1) 0%, rgba(255,192,159,1) 100%);
+}
+
+
+/* FOOTER */
+
+footer {
+    /* font-size: 0.75em; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+footer .datosPersonales a {
+    color: #1f1f1f;
+}
+
+
+/*Pantalla PC*/
+@media screen and (min-width:992px) {
+    footer .datosPersonales a {
+        text-decoration: none;
+    }
+    footer .datosPersonales a:hover {
+        text-decoration: underline;
+    }
+}
