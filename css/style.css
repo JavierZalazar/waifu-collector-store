@@ -5,6 +5,7 @@
 
 body {
     font-family: "Open Sans", sans-serif;
+    font-size: 18px;
 }
 
 
@@ -30,6 +31,15 @@ header, footer {
 }
 
 
+/*MARCAS*/
+
+.grillaMarcas {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+
 /* FOOTER */
 
 footer {
@@ -45,12 +55,25 @@ footer .datosPersonales a {
 }
 
 
+/*Pantalla TABLET*/
+@media screen and (min-width:576px) {
+    .grillaMarcas {
+        grid-template-columns: 1fr 1fr;
+        padding: 1rem;
+    }
+}
+
 /*Pantalla PC*/
-@media screen and (min-width:992px) {
+@media screen and (min-width:993px) {
+    .grillaMarcas {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
     footer .datosPersonales a {
         text-decoration: none;
     }
     footer .datosPersonales a:hover {
         text-decoration: underline;
     }
+  
 }
